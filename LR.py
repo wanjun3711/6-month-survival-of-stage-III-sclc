@@ -34,6 +34,10 @@ X['Surgery'] = X['Surgery'].map(surgery_mapper)
 X['Radiation'] = X['Radiation'].map(radiation_mapper)
 X['Chemotherapy'] = X['Chemotherapy'].map(chemotherapy_mapper)
 
+# 确保没有 NaN 值
+X = X.fillna(0)
+y = y.fillna(0)
+
 # 创建并训练逻辑回归模型
 lr_model = LogisticRegression()
 lr_model.fit(X, y)
