@@ -1,4 +1,4 @@
-﻿Age,Sex,Race ,Marital status ,T stage,N stage,Surgery,Radiation ,Chemotherapy,Vital status
+﻿Age,Sex,Race,Marital status,T stage,N stage,Surgery,Radiation,Chemotherapy,Vital status
 1,1,1,1,2,3,0,1,1,0
 1,2,1,1,1,4,0,0,0,1
 2,1,1,2,2,3,0,1,1,0
