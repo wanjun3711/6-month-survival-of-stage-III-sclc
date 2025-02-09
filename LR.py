@@ -6,8 +6,8 @@ import streamlit as st
 train_data = pd.read_csv('train_data.csv')
 
 # 分离输入特征和目标变量
-X = train_data[['Age', 'Sex', 'Race ', 'Marital status ',
-                'T stage', 'N stage', 'Surgery', 'Radiation ',
+X = train_data[['Age', 'Sex', 'Race', 'Marital status',
+                'T stage', 'N stage', 'Surgery', 'Radiation',
                 'Chemotherapy']]
 y = train_data['Vital status']
 
@@ -39,7 +39,7 @@ lr_model = LogisticRegression()
 lr_model.fit(X, y)
 
 # 预测函数
-def predict_Vital_status(age, sex, race , marital_status , t_stage, n_stage, surgery, radiation , chemotherapy):
+def predict_Vital_status(age, sex, race, marital_status, t_stage, n_stage, surgery, radiation, chemotherapy):
     input_data = pd.DataFrame({
         'Age': [age_mapper[age]],
         'Sex': [sex_mapper[sex]],
