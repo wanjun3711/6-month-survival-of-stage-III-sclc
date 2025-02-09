@@ -56,7 +56,7 @@ def predict_Vital_status(age, sex, race, marital_status, t_stage, n_stage, surge
         'Chemotherapy': [chemotherapy_mapper[chemotherapy]],
     })
     prediction = lr_model.predict(input_data)[0]
-    probability = lr_model.predict_proba(input_data)[0][1]  # 获取属于类别1的概率
+    probability = lr_model.predict_proba(input_data)[0][0]  # 获取属于类别0的概率
     class_label = class_mapping[prediction]
     return class_label, probability
 
