@@ -1,6 +1,5 @@
 # 6-month-survival-of-stage-III-sclc
-install
+# install
 pip install -r requirements.txt
-
-run
+# run
 $ streamlit run LR.py
